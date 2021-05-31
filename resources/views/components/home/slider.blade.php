@@ -2,8 +2,8 @@
 
     @unless ($sliders->count() == 0)
         <div id="slider">
-            <img src="/{{$sliders[0]->image}}" alt="slider-img" title="#caption1" />
-            <img src="/{{ $sliders[1]->image }}" alt="slider-img" title="#caption2" />
+            <img src="{{ Storage::url($sliders[0]->image) }}" alt="slider-img" title="#caption1" />
+            <img src="{{ Storage::url($sliders[1]->image) }}" alt="slider-img" title="#caption2" />
         </div>
     @endunless
 
