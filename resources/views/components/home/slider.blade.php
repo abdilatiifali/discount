@@ -1,9 +1,11 @@
 <div class="slider-area background">
 
-    <div id="slider">
-        <img src="/{{$sliders[0]->image}}" alt="slider-img" title="#caption1" />
-        <img src="/{{ $sliders[1]->image }}" alt="slider-img" title="#caption2" />
-    </div>
+    @unless ($sliders->count() == 0)
+        <div id="slider">
+            <img src="/{{$sliders[0]->image}}" alt="slider-img" title="#caption1" />
+            <img src="/{{ $sliders[1]->image }}" alt="slider-img" title="#caption2" />
+        </div>
+    @endunless
 
 
     <div class="nivo-html-caption" id="caption1" >
