@@ -14,8 +14,8 @@
                 <div class="single-product rounded-lg shadow-lg mr-4">
                 <div class="product-img">
                     <a href="#">
-                        <img src="/{{ Storage::url($product->photos[0]->image) }}" alt="{{$product->name}}" class="first" />
-                        <img src="/{{ Storage::url($product->photos[1]->image) }}" alt="{{$product->name}}" class="second" />
+                        <img src="{{ Storage::url($product->photos[0]->image) }}" alt="{{$product->name}}" class="first" />
+                        <img src="{{ Storage::url($product->photos[1]->image) }}" alt="{{$product->name}}" class="second" />
                     </a>
                 </div>
                 <div class="product-content">

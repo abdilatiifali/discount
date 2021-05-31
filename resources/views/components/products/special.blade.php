@@ -38,8 +38,8 @@
                                                 </div>
                                                 <div class="product-img">
                                                     <a href="/products/{{ $products->first()[0]->id }}">
-                                                        <img src="/{{ Storage::url($products->first()[0]->photos[0]->image) }}" alt="product" class="first" />
-                                                        <img src="/{{ Storage::url($products->first()[0]->photos[1]->image) }}" alt="product" class="second" />
+                                                        <img src="{{ Storage::url($products->first()[0]->photos[0]->image) }}" alt="product" class="first" />
+                                                        <img src="{{ Storage::url($products->first()[0]->photos[1]->image) }}" alt="product" class="second" />
                                                     </a>
                                                 </div>
                                                 <div class="product-content">
@@ -97,7 +97,7 @@
                                                 <div class="timer text-center">
                                                     <div data-countdown="2019/12/15"></div>
                                                 </div>
-                                                <div class="product-img">
+                                                <div class="product-img"
                                                     <a href="#">
                                                         <img src="img/product/12.jpg" alt="product" class="first" />
                                                         <img src="img/product/1.jpg" alt="product" class="second" />
@@ -139,8 +139,8 @@
                                                 <div class="single-product">
                                                     <div class="product-img">
                                                         <a href="/products/{{ $products->first()[1]->id }}">
-                                                            <img src="/{{ Storage::url($products->first()[1]->photos[0]->image) }}" alt="product" class="first" />
-                                                            <img src="/{{ Storage::url($products->first()[1]->photos[1]->image) }}" alt="product" class="second" />
+                                                            <img src="{{ Storage::url($products->first()[1]->photos[0]->image) }}" alt="product" class="first" />
+                                                            <img src="{{ Storage::url($products->first()[1]->photos[1]->image) }}" alt="product" class="second" />
                                                         </a>
                                                     </div>
                                                     <div class="product-content">
@@ -171,8 +171,8 @@
                                                 <div class="single-product hidden-sm">
                                                     <div class="product-img">
                                                         <a href="/products/{{ $products->first()[2]->id }}">
-                                                            <img src="/{{ Storage::url($products->first()[2]->photos[0]->image) }}" alt="product" class="first" />
-                                                            <img src="/{{ Storage::url($products->first()[0]->photos[1]->image) }}" alt="product" class="second" />
+                                                            <img src="{{ Storage::url($products->first()[2]->photos[0]->image) }}" alt="product" class="first" />
+                                                            <img src="{{ Storage::url($products->first()[0]->photos[1]->image) }}" alt="product" class="second" />
                                                         </a>
                                                     </div>
                                                     <div class="product-content">
